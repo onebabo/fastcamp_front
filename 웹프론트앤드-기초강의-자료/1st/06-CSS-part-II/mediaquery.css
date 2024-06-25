@@ -1,0 +1,57 @@
+.box {
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.box1 {
+  width: 100%;
+  height: 400px;
+  background-color: yellow;
+}
+
+.box2 {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  width: 300px;
+  height: 300px;
+  background-color: green;
+}
+
+.box3 {
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+}
+
+.box4 {
+  width: 50px;
+  height: 50px;
+  background-color: magenta;
+}
+
+.box5 {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+}
+
+@media screen and (max-width: 400px) {
+  .box1 {
+    background-color: orange;
+  }
+
+  .box2 {
+    flex-direction: column;
+  }
+
+  .box3, .box4, .box5 {
+    border-radius: 16px;
+  }
+}
+
+@media screen and (min-width: 401px) {
+  .box1 {
+    background-color: yellow;
+  }
+}

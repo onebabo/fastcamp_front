@@ -1,0 +1,32 @@
+.signin {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+input[type=text], input[type=password] {
+  width: 95%;
+  height: 40px;
+  font-size: 18px;
+  line-height: 150%;
+  box-sizing: border-box;
+  border: 3px solid #333;
+  border-radius: 8px;
+  padding: 1em;
+  margin: 0.5em;
+}
+
+.create-switch {
+  margin-left: 1em;
+}
+
+.create-switch label {
+  display: flex;
+  align-items: center;
+}
+
+input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+  font-size: 18px;
+  border: 3px solid #333;
+}

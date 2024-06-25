@@ -1,0 +1,57 @@
+
+###
+GET http://localhost:8080/api/diaries HTTP/1.1
+
+###
+GET http://localhost:8080/api/diaries/2024-05-01 HTTP/1.1
+
+###
+GET http://localhost:8080/api/diaries/2024-05-02 HTTP/1.1
+
+### 
+POST http://localhost:8080/api/diaries HTTP/1.1
+content-type: application/json
+
+{
+  "date": "2024-05-01",
+  "article": "Hello?",
+  "time": "12:05"
+}
+
+### 
+POST http://localhost:8080/api/diaries HTTP/1.1
+content-type: application/json
+
+{
+  "date": "2024-05-02",
+  "article": "연속으로 일기쓰기",
+  "time": "23:05"
+}
+
+### 
+POST http://localhost:8080/api/diaries HTTP/1.1
+content-type: application/json
+
+{
+  "date": "2024-04-15",
+  "article": "과거 일기 쓰기",
+  "time": "23:45"
+}
+
+### 
+PUT http://localhost:8080/api/diaries/2024-05-01 HTTP/1.1
+content-type: application/json
+
+{
+  "article": "즐거운 하루였어",
+  "time": "12:05"
+}
+
+### 
+DELETE http://localhost:8080/api/diaries/2024-05-01 HTTP/1.1
+
+###
+GET http://localhost:8080/api/search/diaries?date=2024-05 HTTP/1.1
+
+###
+GET http://localhost:8080/api/search/diaries?date=2024-04 HTTP/1.1

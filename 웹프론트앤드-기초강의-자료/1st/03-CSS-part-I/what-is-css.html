@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Part I</title>  
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+
+    .chat {
+      width: 100%;
+      max-width: 300px;
+      margin: auto;
+      padding: 20px;
+      background-color: #edddad;
+    }
+
+    .message {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+    }
+
+    .message-info {
+      font-size: 13px;
+      color: #666;
+    }
+    
+    .message-body {
+      max-width: 80%;
+      padding: 10px;
+      border-radius: 10px;
+      margin: 5px 10px;
+    }
+    
+    .message-body:hover {
+      transition: box-shadow 0.8s;
+      box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.8);
+    }
+
+    .message-time {
+      font-size: 0.75em;
+      color: #999;
+    }
+
+    .friend .message-time {
+      align-self: flex-start;
+    }
+
+    .me .message-time {
+      align-self: flex-end;
+    }
+
+    .friend .message-body {
+      background-color: #fff;
+      align-self: flex-start;
+    }
+
+    .me .message-body {
+      background-color: blue;
+      color: #fff;
+      align-self: flex-end;
+    }
+  </style>
+</head>
+<body>
+  <div class="chat">
+    <div class="message friend">
+      <div class="message-info">PT코치</div>
+      <p class="message-body">회원님 오늘 병원에 가야해서요, 금요일에 수업 가능하세요?</p>
+      <time class="message-time">오전 7:36</time>
+    </div>
+    <div class="message me">
+      <p class="message-body">네~ 내일 수업은 없는걸로 알게요. 금요일에 뵈어요~ 👍</p>
+      <time class="message-time">오전 7:48</time>
+    </div>
+    <div class="message friend">
+      <div class="message-info">PT코치</div>
+      <p class="message-body">코치님~ 안녕하세요. 어제 술을 ㅜ.ㅜ 컨디션이 엉망이네요. 오늘은 하루 쉬려고해요. 담주에 빡세게~~</p>
+      <time class="message-time">오전 11:07</time>
+    </div>
+    <div class="message me">
+      <p class="message-body">넵 ㅜㅜ</p>
+      <time class="message-time">오전 11:13</time>
+    </div>
+  </div>
+</body>
+</html>
+
