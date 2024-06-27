@@ -3,12 +3,16 @@ function canvasApp() {
   const ctx = canvas.getContext('2d')
 
   ctx.fillStyle = 'red'
+              // X   y    width  hegiht
+  // 사각형
   ctx.fillRect(10, 10, 300, 10)
 
+  // 글자
   ctx.font = '50px Arial'
   ctx.fillStyle = 'blue'
   ctx.fillText('This is text', 200, 200)
   
+  // 원형
   ctx.beginPath()
   ctx.arc(200, 100, 50, 0, 2 * Math.PI)
   ctx.fillStyle = 'blue'

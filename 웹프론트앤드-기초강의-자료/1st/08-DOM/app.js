@@ -4,6 +4,8 @@
 
 window.onload = function() {
 
+  //const email = document.querySelector('input[type=email]')
+
   const email = document.querySelector('#email')
 
   email.addEventListener('focus', function() {
@@ -11,7 +13,7 @@ window.onload = function() {
     const info = document.createElement('p')
 
     info.innerText = '이메일 형식을 잘 맞춰 입력해 주세요!'
-    
+    //                 추가대상      추가하기 객체 앞에 추가
     form.insertBefore(info, form.firstChild)
   })
 
