@@ -14,7 +14,8 @@ function canvasApp() {
   
   // 원형
   ctx.beginPath()
-  ctx.arc(200, 100, 50, 0, 2 * Math.PI)
+         // x   y   반지름   각도   pi :파이   Math.PI *2  = 360       
+  ctx.arc(200, 100, 50, 0,  Math.PI * 2 )
   ctx.fillStyle = 'blue'
   ctx.fill()
 }
