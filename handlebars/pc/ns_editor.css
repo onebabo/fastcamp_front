@@ -1,0 +1,121 @@
+
+.assignmentsguidNotice {
+	font-family: Dotum, "돋움", san-serif;
+	font-size: 12px;
+	line-height: 170%;
+	color: #000;
+	margin: 0 auto;
+	padding: 20px 0 80px;
+}
+.assignmentsguidNotice caption {display: none;}
+.assignmentsguidNotice img {border: 0;}
+.assignmentsguidNotice p,
+.assignmentsguidNotice div,
+.assignmentsguidNotice ol,
+.assignmentsguidNotice ul,
+.assignmentsguidNotice dl,
+.assignmentsguidNotice dt,
+.assignmentsguidNotice dd,
+.assignmentsguidNotice li,
+.assignmentsguidNotice table,
+.assignmentsguidNotice tr,
+.assignmentsguidNotice th,
+.assignmentsguidNotice td {
+	font-family: Dotum, "돋움", san-serif;
+}
+.assignmentsguidNotice p {
+	margin: 0;
+	padding: 0;
+}
+.assignmentsguidNotice .eduN_fontRed {color: #cc0000;}
+.assignmentsguidNotice .eduN_fontRedB {
+	color: #cc0000;
+	font-weight: bold;
+}
+.assignmentsguidNotice .eduN_fontBlue {color: #456eba;}
+.assignmentsguidNotice .eduN_fontBlueB {
+	color: #456eba;
+	font-weight: bold;
+}
+.assignmentsguidNotice .eduN_fontOrangeB {
+	color: #ff6600;
+	font-weight: bold;
+}
+.assignmentsguidNotice .text_underline {text-decoration: underline;}
+.assignmentsguidNotice .eduN_fontB {font-weight: bold;}
+.assignmentsguidNotice .textCenter {text-align: center;}
+.assignmentsguidNotice .eduN_fontBack_orange {
+	background: #ff6600;
+	padding: 3px 5px 2px;
+	color: #fff;
+}
+.assignmentsguidNotice .eduN_fontBack_yellow {
+	background: #FFFF93;
+	padding: 3px 5px 2px;
+	color: #444;
+}
+.assignmentsguidNotice .grayBox {
+	border: #ccc solid 2px;
+	padding: 15px 30px;
+	margin: 0 0 20px;
+	background: #fff;
+}
+.assignmentsguidNotice .grayBox ul {
+	margin: 0;
+	padding: 0;
+}
+.assignmentsguidNotice .grayBox li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.assignmentsguidNotice .title01_blue {
+	background: #6298d8;
+	color: #fff;
+	font-size: 15px;
+	font-weight: bold;
+	margin: 40px 0 15px;
+	padding: 7px 20px;
+}
+.assignmentsguidNotice .title02_blue {
+	color: #456dba;
+	font-size: 15px;
+	font-weight: bold;
+}
+.assignmentsguidNotice .tbl_bule2 {
+	border-left: #dee9f3 solid 1px;
+	border-top: #6298d8 solid 2px;
+	margin: 10px 0 20px;
+}
+.assignmentsguidNotice .tbl_bule2 th {
+	border-right: #fff solid 1px;
+	border-bottom: #fff solid 1px;
+	line-height: 170%;
+	padding: 10px 4px;
+	background: #dee9f3;
+	color: #000;
+	font-size: 13px;
+}
+.assignmentsguidNotice .tbl_bule2 th.scope {border-top: #fff solid 1px;}
+.assignmentsguidNotice .tbl_bule2 th.redPoint {
+	border-top: #f28c8e solid 2px;
+	border-right: #dee9f3 solid 1px;
+	background: #f4cbc7;
+}
+.assignmentsguidNotice .tbl_bule2 th.line_right {border-right: #dee9f3 solid 1px;}
+.assignmentsguidNotice  .tbl_bule2 td {
+	border-bottom: #dee9f3 solid 1px;
+	border-right: #dee9f3 solid 1px;
+	line-height: 170%;
+	font-size: 12px;
+	padding: 7px 4px;
+}
+.assignmentsguidNotice .tbl_bule2 td.redBack {background: #fdecea;}
+.assignmentsguidNotice ul {
+	margin: 0;
+	padding: 0;
+}
+.assignmentsguidNotice li {
+	list-style: none;
+	margin: 0 0 5px;
+}

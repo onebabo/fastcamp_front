@@ -662,21 +662,18 @@
       form.find(':input[name="plantype"]').val(data.type)
       form.attr('action', button.attr('href')).submit()
     })
-
-
-    
   _.go(
     design.fetch({ size: 4 }),
     function (payload) {
        return payload && qna.fetch()
-    }
-    ,function (payload) {
+    },
+    function (payload) {
       return payload && free_classroom.fetch()
-    }
-    ,function (payload) {
+    },
+    function (payload) {
       return payload && fetch_classrooms()
-    }
-    ,function (payload) {
+    },
+    function (payload) {
       // count 출력
       var key = enums.count__fetch
       var classroom_cnt = _.reduce(
@@ -693,19 +690,17 @@
         free_classroom_cnt: store.free_classroom_cnt
       }, classroom_cnt)
 
-      // classroom-guide
-      //data.classroom_cnt && show_today_popup('classroom-guide')
-      data.classroom_cnt 
+      data.classroom_cnt && show_today_popup('classroom-guide')
 
       contents[key] && templates[key] && contents[key].html(templates[key](data))
       return payload
-    }
-    ,function (payload) {
+    },
+    function (payload) {
       //payload && payload.count && check_mac()
       payload && payload.count
       return payload && fetch_classroom_summary()
-    }
-    ,fetch_face_schedule
+    },
+    fetch_face_schedule
   )
 
   // classroom.fetch(get_param())

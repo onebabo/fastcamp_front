@@ -1,0 +1,57 @@
+@charset "euc-kr";
+/* 20130729 hcomm.co.kr WebPublisher */
+
+/*기본태그 정의*/
+html, body {padding:0;margin:0;height:100%;}
+body, td, select, textarea, input {font-size:12px;font-family:'돋움','Dotum', 'verdana';color:#555;}
+
+/* 마진과 패딩의 초기화 */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td {margin:0;padding:0;}
+
+/* 헤더 폰트 사이즈 초기화 */
+h1, h2, h3, h4, h5, h6 {font-size:100%;}
+
+/* 리스트의 스타일 제거 */
+ol, ul {list-style:none;}
+
+/* 테이블 스타일 초기화 */
+table {border-collapse:collapse;border-spacing:0;table-layout:fixed;}
+
+/* 이미지 및 필드셋에서 보더 표시 초기화 */
+fieldset, img {border:0;}
+img{vertical-align:middle;}
+
+/* 캡션 텍스트 정렬 초기화 */
+caption {text-align:left;}
+
+/* 폼태그의 초기화 */
+select {font-size:12px;font-family:'돋움','Dotum', 'verdana';vertical-align:middle;color:#555;}
+input {font-size:12px;font-family:'돋움','Dotum', 'verdana';vertical-align:middle;color:#555;}
+textarea {font:12px;font-family:'돋움','Dotum', 'verdana';line-height:140%;color:#555;}
+input.radio {vertical-align:middle;}
+
+a:link    {color:#555; text-decoration:none;}
+a:active    {color:#555; text-decoration:none;}
+a:visited    {color:#555; text-decoration:none;}
+a:hover    {color:#555; text-decoration:none;}
+
+/* hidden 처리 */
+caption{margin:-1px;width:1px;height:1px;clip:rect(1px, 1px, 1px, 1px);clip-path:inset(50%);top:0;left:0;}
+.hide,hr{position:absolute;top:-9999px;width:0;height:0;font-size:0;line-height:0;overflow:hidden;visibility:hidden;}
+.none{width:0;height:0;font-size:0;line-height:0;overflow:hidden;visibility:hidden;}
+
+
+#skipNav{height:0; position: relative; z-index: 9999;}
+.skipNav{position:absolute;top:-9999px;background:#10253f;color:#fff!important;width:120px;height:30px;text-align:center;line-height:30px;font-weight:bold;z-index:200;}
+.skipNav:hover,
+.skipNav:focus,
+.skipNav:active{top:0;border-color:#fff;}
+
+#skipPop{height:0;}
+.skipPop{position:absolute;top:-9999px;background:#be7400;width:100%;height:30px;text-align:center;color:white;line-height:30px;font-weight:bold;z-index:100;}
+.skipPop:hover,
+.skipPop:focus,
+.skipPop:active{top:0;color:white;}
+
+*:focus-visible{outline-color:#FF00FF!important;}
+.btn-orange:focus-visible{outline-color:#000!important;}
