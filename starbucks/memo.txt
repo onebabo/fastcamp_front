@@ -1,0 +1,950 @@
+https://github.com/ParkYoungWoong/starbucks-vanilla-app
+
+오픈 그래프(The Open Graph protocol)
+웹페이지가 소셜 미디어(페이스북 등)로 공유될 때 우선적으로 활용되는 정보를 지정합니다.
+
+Slack -
+
+Slack Open Graph example
+
+KakaoTalk -
+
+KakaoTalk Open Graph example
+
+=====================================================================================================================================================
+웹페이지가 소셜 미디어(페이스북 등)로 공유될 때 우선적으로 활용되는 정보를 지정합니다.
+
+더 많은 오픈 그래프 속성 보기
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Starbucks" />
+<meta property="og:title" content="Starbucks Coffee Korea" />
+<meta property="og:description" content="스타벅스는 세계에서 가장 큰 다국적 커피 전문점으로, 64개국에서 총 23,187개의 매점을 운영하고 있습니다." />
+<meta property="og:image" content="./images/starbucks_seo.jpg" />
+<meta property="og:url" content="https://starbucks.co.kr" />
+
+
+og:type: 페이지의 유형(E.g, website, video.movie)
+og:site_name: 속한 사이트의 이름
+og:title: 페이지의 이름(제목)
+og:description: 페이지의 간단한 설명
+og:image: 페이지의 대표 이미지 주소(URL)
+og:url: 페이지 주소(URL)
+트위터 카드(Twitter Cards)
+웹페이지가 소셜 미디어(트위터)로 공유될 때 우선적으로 활용되는 정보를 지정합니다.
+
+
+
+* seo   (검색 엔진 최적화  :  Search Engine Optimization)
+  : 구글이나 네이버 등에서 자신으 웹 사이트/페이지 노출할 수 있도록 정보를 최적화하는 작업을 말함
+
+
+=====================================================================================================================================================
+트위터 카드(Twitter Cards)
+
+웹페이지가 소셜 미디어(트위터)로 공유될 때 우선적으로 활용되는 정보를 지정합니다.
+
+더 많은 트위터 카드 보기
+
+<meta property="twitter:card" content="summary" />
+<meta property="twitter:site" content="Starbucks" />
+<meta property="twitter:title" content="Starbucks Coffee Korea" />
+<meta property="twitter:description" content="스타벅스는 세계에서 가장 큰 다국적 커피 전문점으로, 64개국에서 총 23,187개의 매점을 운영하고 있습니다." />
+<meta property="twitter:image" content="./images/starbucks_seo.jpg" />
+<meta property="twitter:url" content="https://starbucks.co.kr" />
+
+twitter:card: 페이지(카드)의 유형(E.g. summary, player)
+twitter:site: 속한 사이트의 이름
+twitter:title: 페이지의 이름(제목)    : 사이트의 이름
+twitter:description: 페이지의 간단한 설명
+twitter:image: 페이지의 대표 이미지 주소(URL)
+twitter:url: 페이지 주소(URL)
+
+
+=====================================================================================================================================================
+
+
+
+Favicon(파비콘, favorites icon)
+웹페이지를 나타내는 아이콘, 웹페이지의 로고를 설정합니다.
+대부분의 경우 루트 경로에 favicon.ico 파일을 위치하면 자동으로 로딩하기 때문에 <link /> 를 작성할 필요가 없습니다. favicon.png 파일을 사용하려면 다음과 같이 <link />를 작성하세요.
+
+파비콘 이미지는 루트 경로에 있어야 합니다!
+
+<!--<link rel="shortcut icon" href="favicon.ico" />-->
+<link rel="icon" href="./favicon.png" />
+favicon.ico 64 x 64 (px) 또는 32 x 32 또는 16 x 16
+favicon.png 500 x 500 (px)
+
+
+
+.ico 파일 제작
+이미지를 업로드하면 손쉽게 .ico 파일을 제작할 수 있습니다.
+
+iconifier.net
+
+
+=====================================================================================================================================================
+
+reset.css
+각 브라우저의 기본 스타일을 초기화합니다.
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+
+=====================================================================================================================================================
+
+Google Fonts
+
+https://fonts.google.com/
+
+nanum 고딕
+Regular 400
+Bold 700
+ExtraBold 800
+
+
+
+페이지에서 사용할 '나눔고딕' 폰트를 지정합니다.
+
+폰트 라이선스를 꼭 확인해야 합니다!
+
+Google Fonts에서 고른 폰트 파일을 가져옵니다.
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet" />
+
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+
+
+
+
+페이지에 폰트를 적용(CSS 상속)합니다.
+
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+
+=====================================================================================================================================================
+Google Material Icons
+
+구글에서 제공하는 머터리얼 아이콘을 무료로 사용할 수 있습니다.
+https://fonts.google.com/icons
+
+
+Getting started for web   : https://m2.material.io/develop/web/getting-started/
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+다음과 같이 사용할 수 있습니다.
+
+<div class="material-icons">upload</div>
+<div class="material-icons">search</div>
+
+
+=====================================================================================================================================================
+GSAP & ScrollToPlugin
+
+GSAP(The GreenSock Animation Platform)은 자바스크립트로 제어하는 타임라인 기반의 애니메이션 라이브러리입니다. ScrollToPlugin은 스크롤 애니메이션을 지원하는 GSAP 플러그인입니다.
+
+자바스크립트 지식이 뛰어나지 않아도 충분히 사용할 수 있습니다!
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js" integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q==" crossorigin="anonymous"></script>
+
+.to() 사용법 GSAP Easing
+
+https://gsap.com/docs/v3/GSAP/gsap.to()/
+
+
+
+gsap.to(요소, 시간, 옵션)
+// 또는
+TweenMax.to(요소, 시간, 옵션)
+gsap.to(window, .7, {
+  scrollTo: 0
+});
+
+
+
+=====================================================================================================================================================
+
+
+  <header></header>   :  단순 구분용도  (기능X)
+
+
+   color: #333333;
+   -->     color: #333;  회색 
+
+
+<img />    : 인라인 요소(글자)    : 가로세로 값 X  
+
+글자 :  기준선(베이스라인)을 기준으로 정렬됨   :  img  약간의 공간의 공간을 가짐 
+
+  img{
+     display: block;   /* 이미지를  인라인요소 --> block요소로 변경*/
+  }
+
+
+
+=====================================================================================================================================================
+<div class="container">
+  <div class="item"></div>
+</div>
+
+
+.container{
+  width: 400px;
+  height: 250px;
+  background-color: royalblue;
+  position: relative;
+}
+
+/*  상하 정렬 */
+.item{
+  width : 100px;
+  height :100px;
+  background-color: orange;
+  position: absolute;
+  top:0;
+  bottom:0;
+  margin :auto 0;
+}
+
+
+/*  상하-좌우 정렬 */
+.item{
+  width : 100px;
+  height :100px;
+  background-color: orange;
+  position: absolute;
+  top:0;
+  bottom:0;
+  left :0 ;
+  right: 0;
+  margin :auto auto;
+}
+
+
+<span class="material-icons">search</span>
+
+
+
+            <li>
+              <a href="#">My Starbucks</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">Customer Service & Ideas</a>
+            </li>
+
+
+                  <div class="inner">
+                    <ul>
+                      <li></li>
+                    </ul>
+                  </div>
+=
+                  <ul class="inner">
+                      <li></li>
+                  </ul>
+
+
+=====================================================================================================================================================
+BEM (Block Elemnet Modifier)
+  요소__일부분   기호로 요소의 일부분을 표시
+  요소_tkdxo     기호의 상태를 표시
+
+  <div class=""
+            <div class="item__name">COFFEE</div>
+            <div class="item__contents">
+              <div class="contents__menu"></div>
+              <div class="contents__texture"></div>
+            </div>
+
+
+
+=====================================================================================================================================================
+lodash
+
+https://cdnjs.com/libraries/lodash.js
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+
+gsap cdn
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+//window 객체 :화면자체
+/*
+window.addEventListener('scroll', function(){
+  console.log('scroll!');
+});
+*/
+
+
+//window.addEventListener('scroll', _.throttle() );
+
+
+window.addEventListener('scroll', _.throttle(function(){
+  console.log('scroll!');
+}, 300 ) );     // 0.3S  
+// _.throttle( 함수, 시간) 
+
+
+
+
+
+
+window.addEventListener('scroll', _.throttle(function(){
+  //console.log('scroll!');
+  //console.log('window.screenY=' + window.screenY );
+  console.log('window.scrollY=' + window.scrollY );
+  if( window.scrollY >500){
+    //배지 숨기기
+    badegeEl.style.display ='none' ;
+  }else{
+    // 배지 보이기
+    badegeEl.style.display ='block' ;
+
+  }
+
+}, 300 ) );     // 0.3S  
+
+// _.throttle( 함수, 시간) 
+
+
+
+
+window.addEventListener('scroll', _.throttle(function(){
+  //console.log('scroll!');
+  //console.log('window.screenY=' + window.screenY );
+  console.log('window.scrollY=' + window.scrollY );
+  if( window.scrollY >500){
+    //배지 숨기기
+    // badegeEl.style.display ='none' ;
+    //gsap.to(요소,지속시간(초), 옵션); 
+    gsap.to(badegeEl, .6, { 
+      opacity : 0 ,  //투명화  (실제로는 존재함)
+      display : 'none'
+    } ); 
+
+
+  }else{
+    // 배지 보이기
+    // badegeEl.style.display ='block' ;
+    gsap.to(badegeEl, .6, { 
+      opacity : 1  ,  // 표시
+      display : 'block'
+    } ); 
+  }
+
+}, 300 ) );     // 0.3S  
+
+// _.throttle( 함수, 시간) 
+
+
+
+
+GSAP(The GreenSock Animation Platform)은 자바스크립트로 제어하는 타임라인 기반의 애니메이션 라이브러리입니다. ScrollToPlugin은 스크롤 애니메이션을 지원하는 GSAP 플러그인입니다.
+
+자바스크립트 지식이 뛰어나지 않아도 충분히 사용할 수 있습니다!
+
+
+https://gsap.com/docs/v3/GSAP/gsap.to()/
+
+
+gsap.to(요소, 시간, 옵션)
+// 또는
+TweenMax.to(요소, 시간, 옵션)
+
+
+
+
+section   :  header   ...   footer 
+
+
+
+
+
+
+  /*  우선순위 .btn 10점*/
+  .btn {
+    width: 130px;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 4px;
+    color: #333;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: block ;
+    transition: .4s;
+  }
+
+  .btn:hover {
+    background-color: #333;
+    color: #fff;
+
+  }
+  /*  우선순위 .btn 10점*/
+  /*  우선순위 btn.btn--reverse 20점*/
+  .btn.btn--reverse{
+    background-color: #333;
+    color: #fff;
+  }
+
+  /*  우선순위 .btn 10점*/
+  /*  우선순위 btn.btn--reverse 20점*/
+  /*  우선순위 btn.btn--reverse:hover 30점*/
+  .btn.btn--reverse:hover{
+    background-color: transparent;
+    color: #333;
+  }
+
+  .btn.btn--brown{
+    color: #592b18;
+    border-color: #592b18 ;
+    
+  }
+
+  .btn.btn--brown:hover{
+    color: #fff;
+    border-color: #592b18 ;
+  }
+
+  .btn.btn--gold{
+    color: #d9aa8a;
+    border-color: #d9aa8a ;
+    
+  }
+
+  .btn.btn--gold:hover{
+    color: #fff;
+    border-color: #d9aa8a ;
+  }
+
+  .btn.btn--write{
+    color: #fff;
+    border-color: #fff ;
+    
+  }
+
+  .btn.btn--write:hover{
+    color: #333;
+    border-color: #fff ;
+  }
+
+
+
+
+
+
+=====================================================================================================================================================
+=====================================================================================================================================================
+
+
+JS Strict Mode
+
+JavaScript를 '엄격 모드'로 사용합니다.
+파일 혹은 함수의 최상단에 작성해야 합니다.
+
+'use strict';
+'Strict Mode'는 ECMAScript 5 버전에 있는 새로운 기능으로써, 프로그램 또는 함수를 엄격한 운용 콘텍스트 안에서 실행시킬 수 있게끔 합니다. 이 엄격한 콘텍스트는 몇가지 액션들을 실행할 수 없도록 하며, 좀 더 많은 예외를 발생시킵니다.
+
+엄격 모드의 장점
+
+일반적인 코딩 실수에서 예외 처리
+안전하지 않은 액션에 대한 예외 처리 (ex: 전역 객체로 접근)
+혼란스럽거나 제대로 고려되지 않는 기능들을 비활성화
+
+
+
+
+랜덤한 숫자를 생성하는 함수
+// 범위 랜덤 함수(소수점 2자리까지)
+function random(min, max) {
+  // `.toFixed()`를 통해 반환된 문자 데이터를,
+  // `parseFloat()`을 통해 소수점을 가지는 숫자 데이터로 변환
+  return parseFloat((Math.random() * (max - min) + min).toFixed(2))
+}
+=====================================================================================================================================================
+
+Swiper
+
+[2021.08.26 Updated]
+강의와 같이 Swiper 6버전을 사용합니다.
+7/8버전의 사용법이 다르기 때문에 6버전을 유지합니다.
+: 현재는 8버전
+
+
+
+// 6버전 인경우
+<!-- in HEAD -->
+<link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+
+<!-- in BODY : 6버전 -->
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">1</div>
+    <div class="swiper-slide">2</div>
+    <div class="swiper-slide">3</div>
+  </div>
+</div>
+
+
+<!-- in BODY : 8버전 -->
+<div class="swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">1</div>
+    <div class="swiper-slide">2</div>
+    <div class="swiper-slide">3</div>
+  </div>
+</div>
+
+/*
+https://swiperjs.com/get-started    
+
+Add Swiper HTML Layout 
+
+*/
+
+Add Swiper HTML Layout
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">Slide 1</div>
+    <div class="swiper-slide">Slide 2</div>
+    <div class="swiper-slide">Slide 3</div>
+    ...
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
+
+
+배움
+https://career.baeoom.com/css/swiper.min.css
+ * Swiper 8.3.2
+
+
+ 검색
+ Swiper.js
+
+ https://swiperjs.com/
+
+// api
+https://swiperjs.com/swiper-api
+
+https://swiperjs.com/demos
+// 
+https://swiperjs.com/demos
+
+Navigation 수평
+
+Vertical  수직
+
+
+
+https://codesandbox.io/p/sandbox/swiper-vertical-qtztnn?file=%2Findex.html%3A51%2C1-82%2C1
+
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      <div class="swiper-slide">Slide 4</div>
+      <div class="swiper-slide">Slide 5</div>
+      <div class="swiper-slide">Slide 6</div>
+      <div class="swiper-slide">Slide 7</div>
+      <div class="swiper-slide">Slide 8</div>
+      <div class="swiper-slide">Slide 9</div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      direction: "vertical",
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+// 토글 버튼을 클릭하면,
+promotionToggleBtn.addEventListener('click', function () {
+  // 슬라이드 영역 숨김 여부를 반댓값으로 할당!
+  isHidePromotion = !isHidePromotion   /* 반대값으로 변경 */
+  // 요소를 숨겨야 하면,
+  if (isHidePromotion) {
+    promotionEl.classList.add('hide')
+  // 요소가 보여야 하면,
+  } else {
+    promotionEl.classList.remove('hide')
+  }
+})
+
+
+
+
+youtube
+
+  16:9 
+
+  부모
+  width : 200px
+  자식 
+  padding-top  : 56.25%
+
+=====================================================================================================================================================
+
+
+youtube iframe api
+
+Youtube AP
+
+onYouTubePlayerAPIReady 함수 이름은 Youtube IFrame Player API에서 사용하는 이름이기 때문에 다르게 지정하면 동작하지 않습니다!
+그리고 함수는 전역(Global) 등록해야 합니다!
+
+플레이어 매개변수(playerVars)에서 더 많은 옵션을 확인할 수 있습니다.
+https://developers.google.com/youtube/player_parameters.html?playerVersion=HTML5&hl=ko#Parameters
+
+
+
+
+
+
+https://developers.google.com/youtube/iframe_api_reference?hl=ko
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+    <div id="player"></div>
+
+    <script>
+      // 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '360',
+          width: '640',
+          videoId: 'M7lc1UVf-VE',
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+
+      // 4. The API will call this function when the video player is ready.
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+
+      // 5. The API calls this function when the player's state changes.
+      //    The function indicates that when playing a video (state=1),
+      //    the player should play for six seconds and then stop.
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          setTimeout(stopVideo, 6000);
+          done = true;
+        }
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
+    </script>
+  </body>
+</html>
+
+
+
+랜덤한 숫자를 생성하는 함수
+// 범위 랜덤 함수(소수점 2자리까지)
+function random(min, max) {
+  // `.toFixed()`를 통해 반환된 문자 데이터를,
+  // `parseFloat()`을 통해 소수점을 가지는 숫자 데이터로 변환
+  return parseFloat((Math.random() * (max - min) + min).toFixed(2))
+}
+
+
+
+
+  <!--PICK YOUR FAVORITE-->
+  <section class="pick-your-favorite scroll-spy">
+    <div class="inner">
+
+      <div class="text-group">
+        <img src="./images/favorite_text1.png" alt="PICK YOUR FAVORITE" class="title back-to-position to-right delay-0" />
+        <img src="./images/favorite_text2.png" alt="다양한 메뉴를 스타벅스에서 즐겨보세요." class="description back-to-position to-right delay-1" />
+        <div class="more back-to-position to-right delay-2">
+          <a href="javascript:void(0)" class="btn btn--white">자세히 보기</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+/*PICK YOUR FAVORITE*/
+.pick-your-favorite {
+  background-image: url("../images/favorite_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.pick-your-favorite .inner {
+  padding: 110px 0;
+}
+.pick-your-favorite .text-group {
+  width: 362px;
+  margin-left: 100px;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;   /* 줄바꿈*/
+}
+.pick-your-favorite .text-group .title {
+  margin-bottom: 40px;
+}
+.pick-your-favorite .text-group .description {
+  margin-bottom: 40px;
+}
+
+
+
+ScrollMagic
+ScrollMagic은 스크롤과 요소의 상호 작용을 위한 자바스크립트 라이브러리입니다.
+대표적으로 어떤 요소가 현재 화면에 보이는 상태인지를 확인할 때 사용합니다.
+https://scrollmagic.io/docs/
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+
+
+
+
+
+/**
+ * 요소가 화면에 보여짐 여부에 따른 요소 관리
+ */
+// 관리할 요소들 검색!
+const spyEls = document.querySelectorAll('section.scroll-spy')
+// 요소들 반복 처리!
+
+
+spyEls.forEach(function (spyEl) {
+
+  //new ScrollMagic.Scene().setClassToggle.add()
+
+  new ScrollMagic
+    .Scene({ // 감시할 장면(Scene)을 추가
+      triggerElement: spyEl, // 보여짐 여부를 감시할 요소를 지정
+      triggerHook: .8 // 화면의 80% 지점에서 보여짐 여부 감시
+    })
+    .setClassToggle(spyEl, 'show') // 요소가 화면에 보이면 show 클래스 추가
+    .addTo(new ScrollMagic.Controller()) // 컨트롤러에 장면을 할당(필수!)
+
+
+    // 
+})
+
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js" integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q==" crossorigin="anonymous"></script>
+ 
+    // 상단으로 스크롤 버튼 보이기!
+    gsap.to(toTopEl, .2, {
+      x: 0
+    })
+
+    
+
+
+Ch10.스타벅스예제	2024-08-26		8:14:39
+
+
+
+
+git clone https://github.com/onebabo/fastcamp_html_script.git
+
+vs 코드에서 프로젝트 연결하기 (폴더열기)
+
+
+터미널에서 열기
+> code .
+or
+
+현재창에 프로젝트 열기
+> code . -r
+
+
+
+
+=====================================================================================================================================================
+=====================================================================================================================================================
+
+PS D:\workspaces\git_test> git init
+
+PS D:\workspaces\git_test> git status
+
+PS D:\workspaces\git_test> git add .
+
+PS D:\workspaces\git_test>  git commit -m '1'
+
+PS D:\workspaces\git_test> git log
+commit ad6ca82326897b4a3b8409175223e30d94d4ad9a (HEAD -> master)
+Author: onebabo <jhkang@baeoom.com>
+Date:   Wed Aug 28 11:15:31 2024 +0900
+
+
+내용수정 2
+PS D:\workspaces\git_test>  git commit -m '2'
+
+
+내용수정 3
+PS D:\workspaces\git_test>  git commit -m '3'
+
+
+원복하기  (1개버전 )
+PS D:\workspaces\git_test> git reset --hard HEAD~1
+내용수정 2 으로 변경됨
+
+
+직전 단계로 되돌리기(실수한경우 ) 
+PS D:\workspaces\git_test> git reset --hard ORIG_HEAD
+
+
+PS D:\workspaces\git_test> git reset --hard HEAD~2   
+
+
+-- 신규 추가
+PS D:\workspaces\git_test> git branch purple
+
+
+PS D:\workspaces\git_test> git branch
+* master
+  purple
+PS D:\workspaces\git_test> git checkout purple
+
+
+
+저장소 추가 
+git-practice
+
+https://github.com/onebabo/git-practice.git
+
+PS D:\workspaces\git_test> git remote add origin https://github.com/onebabo/git-practice.git
+
+PS D:\workspaces\git_test> git push origin master
+
+
+
+
+
+
+

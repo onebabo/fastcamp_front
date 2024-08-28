@@ -1,0 +1,204 @@
+
+=====================================================================================================================================================
+
+PS D:\workspaces\fastcampus\fastcamp_html_script> git --version
+git version 2.45.2.windows.1
+
+
+
+
+https://git-scm.com/
+
+git 설치하기 
+
+Download for Windows
+
+Debian/Ubuntu
+For the latest stable version for your release of Debian/Ubuntu
+
+# apt-get install git
+For Ubuntu, this PPA provides the latest stable upstream Git version
+
+# add-apt-repository ppa:git-core/ppa # apt update; apt install git
+Fedora
+# yum install git (up to Fedora 21)
+# dnf install git (Fedora 22 and later)
+Gentoo
+# emerge --ask --verbose dev-vcs/git
+Arch Linux
+# pacman -S git
+openSUSE
+# zypper install git
+Mageia
+# urpmi git
+Nix/NixOS
+# nix-env -i git
+FreeBSD
+# pkg install git
+Solaris 9/10/11 (OpenCSW)
+# pkgutil -i git
+Solaris 11 Express
+# pkg install developer/versioning/git
+OpenBSD
+# pkg_add git
+Alpine
+$ apk add git
+Red Hat Enterprise Linux, Oracle Linux, CentOS, Scientific Linux, et al.
+RHEL and derivatives typically ship older versions of git. You can download a tarball and build from source, or use a 3rd-party repository such as the IUS Community Project to obtain a more recent version of git.
+
+Slitaz
+$ tazpkg get-install git
+
+
+
+https://github.com/
+
+회원가입
+jhkang@baeoom.com
+
+=====================================================================================================================================================
+PS D:\workspaces\fastcampus\fastcamp_html_script> git --version
+
+
+# 현재 프로젝트에서 변경사항 추적(버전관리)를 시작 
+PS D:\workspaces\fastcampus\fastcamp_html_script> git init
+Reinitialized existing Git repository in D:/workspaces/fastcampus/fastcamp_html_script/.git/
+
+
+# 개행 문자(NewLine)설정
+#windows
+ PS D:\workspaces\fastcampus\fastcamp_html_script>git config --global core.autocrlf true    
+#Mac
+ // 맥에서는  git config --global core.autocrlf  input   
+
+# 사용자 정보 
+# 커밋(버전 생성)을 위한 정보등록
+PS D:\workspaces\fastcampus\fastcamp_html_script> git config --global user.name 'onebabo'   //github 사용자명
+PS D:\workspaces\fastcampus\fastcamp_html_script> git config --global user.email 'jhkang@baeoom.com'   //github 사용자명
+
+# 구성확인
+## Q키를 통해서 종료
+PS D:\workspaces\fastcampus\fastcamp_html_script> git config --global --list
+
+# git을 모든 파일의 변경사항을 추적하록 지정
+PS D:\workspaces\fastcampus\fastcamp_html_script> git add .
+
+# git 상태
+PS D:\workspaces\fastcampus\fastcamp_html_script> git status
+
+# 메시지(-m  :메모)와 함께 버전을 생성
+PS D:\workspaces\fastcampus\fastcamp_html_script> git commit -m 'git hub 2024-08-27'
+
+# git 상태용도
+PS D:\workspaces\fastcampus\fastcamp_html_script> git log
+
+# origin 이란 별칭으로 원격 저장소를 연결 
+PS D:\workspaces\fastcampus\fastcamp_html_script> git remote add origin https://github.com/onebabo/fastcamp_html_script.git
+
+# origin 이란 별칭의 원격 저장소(master : 메인 brach) 로 버전 내역 전송 
+PS D:\workspaces\fastcampus\fastcamp_html_script> git push origin main 
+
+==> PS D:\workspaces\fastcampus\fastcamp_html_script> git push origin master
+
+github저장소 만들기 
+Create a new repository
+
+Public  : 비공개
+Private  : 공개
+
+
+업로드하기 
+주소 확인
+https://github.com/onebabo/fastcamp_html_script.git
+
+
+=====================================================================================================================================================
+
+netify
+https://app.netlify.com/sites/2572/configuration/deploys
+
+
+
+https://2572.netlify.app/
+https://2572.netlify.app/starbucks/
+
+
+
+https://github.com/ParkYoungWoong/apple-ipad-app
+
+
+https://github.com/ParkYoungWoong/overwatch-hero-selector-vanilla
+
+
+SCSS 리팩토링 버전
+https://github.com/ParkYoungWoong/overwatch-hero-selector-vanilla/tree/refactoring-scss
+
+
+
+SCSS 리팩토링 버전
+https://github.com/ParkYoungWoong/overwatch-hero-selector-vanilla/tree/refactoring-scss
+
+
+
+32개 요소가 생성됨
+.hero*32>.image   tab
+
+
+=====================================================================================================================================================
+브렌치 추가하기 
+
+PS D:\workspaces\fastcampus\fastcamp_html_script> git branch
+* main
+
+
+
+PS D:\workspaces\fastcampus\fastcamp_html_script> git branch -a
+* main
+  remotes/origin/main
+PS D:\workspaces\fastcampus\fastcamp_html_script> 
+
+# branch 추가 
+PS D:\workspaces\fastcampus\fastcamp_html_script> git branch signin
+
+# branch 전환하기 
+PS D:\workspaces\fastcampus\fastcamp_html_script> git checkout signin
+M       github/memo.txt
+Switched to branch 'signin'
+
+PS D:\workspaces\fastcampus\fastcamp_html_script> git  add . 
+PS D:\workspaces\fastcampus\fastcamp_html_script> git commit -m '로그인 페이지 시작하기'
+
+# branch 이동하기 main    :  signin 폴더가 보이지 않음
+PS D:\workspaces\fastcampus\fastcamp_html_script> git checkout main  
+
+# 최종 작업 brach 이동하기
+PS D:\workspaces\fastcampus\fastcamp_html_script> git checkout signin  
+
+
+
+
+
+
+.signin__card form [type="submit"] {
+  background-color: #006633;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+
+=====================================================================================================================================================
+Pull requests
+
+                Compare & pull request
+
+
+
+Branches and deploy contexts
+
+
+=====================================================================================================================================================
+
+=====================================================================================================================================================
